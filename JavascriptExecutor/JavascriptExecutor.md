@@ -46,14 +46,11 @@
 		--By Pixel
 		js.executeScript("window.scrollBy(0,1000)"); //downward
 		js.executeScript("window.scrollBy(0,-1000)");//upward   
-.	  
-		// By visibleText
+	    --By visibleText
 		js.executeScript("arguments[0].scrollIntoView();", element1);	  
-.		  
-		// By height
+		--By height
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");   
-.	  
-		// Horizental scroll
+		--Horizental scroll
 		js.executeScript("arguments[0].scrollIntoView();", element1);   
 
 
