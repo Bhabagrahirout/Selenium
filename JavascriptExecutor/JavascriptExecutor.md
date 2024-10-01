@@ -50,7 +50,8 @@
 		js.executeScript("arguments[0].scrollIntoView();", element1);	  
 		--By height
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");   
-		--Horizental scroll
+		
+*		Horizental scroll
 		js.executeScript("arguments[0].scrollIntoView();", element1);   
 
 
