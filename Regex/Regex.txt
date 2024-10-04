@@ -1,7 +1,4 @@
 
-
-					~ Regex ~
-
 Quantifier:
 * Zero or many
 + One or many
