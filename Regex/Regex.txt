@@ -1,0 +1,39 @@
+
+
+											~ Regex ~
+
+Quantifier:
+* Zero or many
++ One or many
+? Zero or one
+
+Anchers:
+^   -> Start with
+$   ->End with
+
+Character:
+ .  -> Every thing expect new line
+\d  -> Digit
+\D  -> Except digit
+\w  -> Alphanumeric and Underscore
+\W  -> Except Alphanumeric and Underscore
+\s  -> WhiteSpace( space,Tab,newLine  etc)
+\S  -> Except WhiteSpace
+
+
+Methods:
+<.*>  (Greedy)
+<.*?>  (Non Greedy)
+  e.g
+	<strong> Bhaba </strong>
+       In Greedy method it goes to the last then backtracking and match the character  (whole things)
+       In Non Greedy it check one by one till find the last character  (<strong> )
+
+Example:
+
+
+
+
+
+
+
