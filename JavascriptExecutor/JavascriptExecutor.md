@@ -63,8 +63,8 @@
 				--By width   
 				js.executeScript("window.scrollTo(0,document.body.scrollWidth)");   
   
-			 B)For a particular region like a div,table etc   
-				js.executeScript("document.querySelector('div[name="gnd"]').scrollLeft = 300;");  
+			 B)For a particular region like a div,table etc     
+				js.executeScript("arguments[0].scrollLeft=1000;", element1);
 				we can scroll right ,top,button etc
 
 			
@@ -93,7 +93,8 @@
 		 
 *		Console   
   
-		js.executeScript("document.querySelector('div[style=\"left: 78px; width: 714px;\"]').style.border='3px solid red';")    
+		js.executeScript("document.querySelector('div[style=\"left: 78px; width: 714px;\"]').style.border='3px solid red';")      
+		js.executeScript("document.querySelector('div[name="gnd"]').scrollLeft = 300;");  
 		We can perform any actions on elements using JavaScriptExecutor, as long as the action is supported in the browser's console, such as jQuery commands.
 				
 				
