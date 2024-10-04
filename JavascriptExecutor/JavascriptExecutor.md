@@ -88,6 +88,13 @@
 *		 we can do multiple action at a time
 		js.executeScript("arguments[0].value = arguments[1];arguments[2].click(); arguments[3].removeAttribute('disabled');",element1, "Selenium WebDriver", element1, element1);  
 		 first index value for 1st arguments
+
+
+		 
+*		Console   
+  
+		js.executeScript("document.querySelector('div[style=\"left: 78px; width: 714px;\"]').style.border='3px solid red';")    
+		We can perform any actions on elements using JavaScriptExecutor, as long as the action is supported in the browser's console, such as jQuery commands.
 				
 				
 	
