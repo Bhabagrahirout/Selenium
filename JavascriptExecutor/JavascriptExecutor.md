@@ -41,8 +41,7 @@
 		js.executeScript("arguments[0].removeAttribute('id','sname');", element1);
 		
 		
-**		For Full Screen   
-*
+*	For Full Screen   
 			Vertican scroll
 			--By Pixel
 			js.executeScript("window.scrollBy(0,1000)"); //downward
@@ -50,9 +49,9 @@
 		    --By visibleText
 			js.executeScript("arguments[0].scrollIntoView();", element1);	  
 			--By height
-			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");   
-			
-   *		Horizental scroll
+			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");       
+	
+   			Horizental scroll
 			--By Pixel
 			js.executeScript("window.scrollBy(1000,0)"); //left to right
 			js.executeScript("window.scrollBy(-1000,0)"); //right to left 
