@@ -46,28 +46,22 @@
 			For full Screen     
 		  
 			(1)Vertican scroll
-			--By Pixel
-			js.executeScript("window.scrollBy(0,1000)"); //downward
-			js.executeScript("window.scrollBy(0,-1000)");//upward   
-		    	--By visibleText
-			js.executeScript("arguments[0].scrollIntoView();", element1);	  
-			--By height
-			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");   
+				--By Pixel
+				js.executeScript("window.scrollBy(0,1000)"); //downward
+				js.executeScript("window.scrollBy(0,-1000)");//upward   
+			    	--By visibleText
+				js.executeScript("arguments[0].scrollIntoView();", element1);	  
+				--By height
+				js.executeScript("window.scrollTo(0,document.body.scrollHeight)");   
 
-
-
-
-
-			    
-	
-   			Horizental scroll
-			--By Pixel
-			js.executeScript("window.scrollBy(1000,0)"); //left to right
-			js.executeScript("window.scrollBy(-1000,0)"); //right to left 
-			--By visibleText
-			js.executeScript("arguments[0].scrollIntoView();", element1);
-			--By width   
-			js.executeScript("window.scrollTo(0,document.body.scrollWidth)"); 
+   			(2)Horizental scroll
+				--By Pixel
+				js.executeScript("window.scrollBy(1000,0)"); //left to right
+				js.executeScript("window.scrollBy(-1000,0)"); //right to left 
+				--By visibleText
+				js.executeScript("arguments[0].scrollIntoView();", element1);
+				--By width   
+				js.executeScript("window.scrollTo(0,document.body.scrollWidth)"); 
 			
 			
 **		For a particular region like a div,Table etc   
