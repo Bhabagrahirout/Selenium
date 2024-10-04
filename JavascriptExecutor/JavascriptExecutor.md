@@ -43,7 +43,7 @@
 
 *		Scroll   
   
-			For full Screen     
+			A)For full Screen     
 		  
 			(1)Vertican scroll
 				--By Pixel
@@ -63,9 +63,10 @@
 				--By width   
 				js.executeScript("window.scrollTo(0,document.body.scrollWidth)");   
   
-			For a particular region like a div,table etc   
-					js.executeScript("document.querySelector('div[name="gnd"]').scrollLeft = 300;");
-		we can scroll right,Top,Button etc
+			 B)For a particular region like a div,table etc   
+				js.executeScript("document.querySelector('div[name="gnd"]').scrollLeft = 300;");  
+				we can scroll right ,top,button etc
+
 			
 			
 
