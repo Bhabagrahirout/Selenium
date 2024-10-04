@@ -41,19 +41,21 @@
 		js.executeScript("arguments[0].removeAttribute('id','sname');", element1);
 		
 
-*		For full Screen     
+*		Scroll   
+  
+			For full Screen     
 		  
-		(1)Vertican scroll
+			(1)Vertican scroll
 			--By Pixel
 			js.executeScript("window.scrollBy(0,1000)"); //downward
 			js.executeScript("window.scrollBy(0,-1000)");//upward   
-		    --By visibleText
+		    	--By visibleText
 			js.executeScript("arguments[0].scrollIntoView();", element1);	  
 			--By height
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");   
 
 
-nnnn
+
 
 
 			    
