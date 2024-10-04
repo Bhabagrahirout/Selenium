@@ -42,7 +42,9 @@
 		
 
 *		For full Screen   
-		mmmm
+   1.  first_item
+2.  second_item
+
 nnnn
 
 
