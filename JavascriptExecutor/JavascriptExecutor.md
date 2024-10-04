@@ -41,9 +41,10 @@
 		js.executeScript("arguments[0].removeAttribute('id','sname');", element1);
 		
 
-*		For full Screen   
-   1.  first_item
-2.  second_item
+*		For full Screen     
+		  
+		mmm
+
 
 nnnn
 
