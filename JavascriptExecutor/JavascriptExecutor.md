@@ -43,20 +43,20 @@
 
 *		For full Screen     
 		  
-		mmm
-
-
-nnnn
-
-
-			Vertican scroll
+		(1)Vertican scroll
 			--By Pixel
 			js.executeScript("window.scrollBy(0,1000)"); //downward
 			js.executeScript("window.scrollBy(0,-1000)");//upward   
 		    --By visibleText
 			js.executeScript("arguments[0].scrollIntoView();", element1);	  
 			--By height
-			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");       
+			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");   
+
+
+nnnn
+
+
+			    
 	
    			Horizental scroll
 			--By Pixel
