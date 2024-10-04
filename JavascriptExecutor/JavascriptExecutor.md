@@ -41,8 +41,9 @@
 		js.executeScript("arguments[0].removeAttribute('id','sname');", element1);
 		
 		
-**		For Full Screen
-	*		Vertican scroll
+**		For Full Screen   
+*
+			Vertican scroll
 			--By Pixel
 			js.executeScript("window.scrollBy(0,1000)"); //downward
 			js.executeScript("window.scrollBy(0,-1000)");//upward   
@@ -61,7 +62,8 @@
 			js.executeScript("window.scrollTo(0,document.body.scrollWidth)"); 
 			
 			
-**		For a particular region like a div,Table etc
+**		For a particular region like a div,Table etc   
+*
 		js.executeScript("document.querySelector('div[name="gnd"]').scrollLeft = 300;");
 		we can scroll right,Top,Button etc
 		  			
