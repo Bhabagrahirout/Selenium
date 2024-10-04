@@ -1,6 +1,6 @@
 
 
-											~ Regex ~
+					~ Regex ~
 
 Quantifier:
 * Zero or many
