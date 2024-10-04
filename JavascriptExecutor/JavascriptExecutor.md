@@ -40,10 +40,9 @@
 		js.executeScript("arguments[0].setAttribute('country','india');", element1);
 		js.executeScript("arguments[0].removeAttribute('id','sname');", element1);
 		
-		
-*	For Full Screen     
-	nnnn
-			
+
+*		For full Screen
+nnnn
 
 
 			Vertican scroll
