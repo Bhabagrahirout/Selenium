@@ -41,7 +41,11 @@
 		js.executeScript("arguments[0].removeAttribute('id','sname');", element1);
 		
 		
-*	For Full Screen   
+*	For Full Screen     
+	nnnn
+			
+
+
 			Vertican scroll
 			--By Pixel
 			js.executeScript("window.scrollBy(0,1000)"); //downward
