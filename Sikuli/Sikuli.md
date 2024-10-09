@@ -18,13 +18,19 @@
 			System.out.println("element Found");   
 		 else   
 			System.out.println("element  Not Found");
-
+		 It's better to check if the image is present first, then perform the action .Match contains all the functionality of the Screen class.
+		 
 
 *		Click   
 		 sc.click("imgpath");   
-		 If you don't provide any arguments, it will click in the middle. 
+		 status.click();  
+		 If you don't provide any arguments, it will click in the middle of the screen. 
 		 
 		 
+*		Double Click
+		status.doubleClick();
+		
+		
 *		SendKeys / Type   
 		 sc.click("imgpath");  
 		 sc.type("tshirt");    
@@ -54,7 +60,16 @@
 		  
 		 
 *		Click an Dynamic Element i.e changes its color or size    
-		 Match status=sc.exists("imgpath",10);
-		 status.aboveAt(200).click();   // from this element to upper 200px click
+		a)Match
+			Match status=sc.exists("imgpath",10);  
+		 	Region r=status.above(150);  
+		 	r.click(); 
+		 	OR
+		 	status.above(100).click();   
+		b)Region   
+			Region elementRegion = new Region(x,y,w,h);   
+			elementRegion.above(100).click();
+		 	From imgpath element to upper 100px click     
+			
 		 
 	
