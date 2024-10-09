@@ -4,7 +4,7 @@
 ### The screen Should be open so that it matches  the images.    
   
 		 Screen sc= new Screen();
-		  		OR 
+		  	OR 
 		 Region elementRegion = new Region(x,y,w,h);  
 		  Both have same functionality but screen for total screen and region for a specific palce
 		 String imgpath="img1.png";
@@ -21,8 +21,10 @@
 
 
 *		Click   
-		 sc.click("imgpath"); 
-		
+		 sc.click("imgpath");   
+		 If you don't provide any arguments, it will click in the middle. 
+		 
+		 
 *		SendKeys / Type   
 		 sc.click("imgpath");  
 		 sc.type("tshirt");    
