@@ -32,5 +32,12 @@
 		 int x = sc.x;	  // bydefault (x,y)=(0,0)
 		 int y = sc.y;					
 			
+			
+*		Element height,width   
+		 Match status=sc.exists("imgpath",10);
+		 int h=status.h;
+		 int w=status.w;
+		 int x=status.x;
+		 int y=status.y;			
 	
 	
