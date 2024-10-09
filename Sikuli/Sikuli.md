@@ -24,7 +24,13 @@
 		 sc.click("imgpath");  
 		 sc.type("tshirt");    
 		 We can't directly send the values, so we must first click, then use sendKeys.
-		
+
+
+*		Screen height,width   
+		 int height = sc.h;  
+		 int width = sc.w;	  
+		 int x = sc.x;	  // bydefault (x,y)=(0,0)
+		 int y = sc.y;					
 			
 	
 	
