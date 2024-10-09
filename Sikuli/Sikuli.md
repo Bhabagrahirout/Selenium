@@ -3,7 +3,10 @@
 
 ### The screen Should be open so that it matches  the images.    
   
-		 Screen sc= new Screen();  
+		 Screen sc= new Screen();
+		  		OR 
+		 Region elementRegion = new Region(x,y,w,h);  
+		  Both have same functionality but screen for total screen and region for a specific palce
 		 String imgpath="img1.png";
 
 
@@ -38,6 +41,18 @@
 		 int h=status.h;
 		 int w=status.w;
 		 int x=status.x;
-		 int y=status.y;			
-	
+		 int y=status.y;
+		 
+		 
+*		Click using Coordinate   
+		 Region elementRegion = new Region(x,y,w,h);   // first find coordinate   
+		 elementRegion.click();   
+			  OR
+		 sc.click(elementRegion);
+		  
+		 
+*		Click an Dynamic Element i.e changes its color or size    
+		 Match status=sc.exists("imgpath",10);
+		 status.aboveAt(200).click();   // from this element to upper 200px click
+		 
 	
