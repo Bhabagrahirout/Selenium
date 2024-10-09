@@ -29,7 +29,11 @@
 		 
 		 
 *		Double Click
-		status.doubleClick();
+		 status.doubleClick();
+		
+		
+*		Right Click
+		 status.rightClick();		
 		
 		
 *		SendKeys / Type   
