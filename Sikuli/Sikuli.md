@@ -63,7 +63,7 @@
 *		Click an Dynamic Element i.e changes its color or size    
 		a)Match
 			Match status=sc.exists("imgpath",10);  
-		 	Region r=status.above(150);  
+		 	Region r=status.above(100);  
 		 	r.click(); 
 		 	OR
 		 	status.above(100).click();   
