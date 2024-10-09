@@ -18,11 +18,11 @@
 
 
 *		Click   
-		sc.click("imgpath"); 
+		 sc.click("imgpath"); 
 		
 *		SendKeys / Type   
-		sc.click("imgpath");  
-		sc.type("tshirt");
+		 sc.click("imgpath");  
+		 sc.type("tshirt");
 		
 			
 	
