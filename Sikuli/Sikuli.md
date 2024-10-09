@@ -4,6 +4,7 @@
 ### The screen Should be open so that it matches  the images.    
   
 		 Screen sc= new Screen();  
+		 String imgpath="img1.png";
 
 
 *		Check Element Present or not   
