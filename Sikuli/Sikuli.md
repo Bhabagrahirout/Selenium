@@ -1,9 +1,10 @@
 # Sikuli
 
 
-### The screen Should be open so that it matches  the images.
+### The screen Should be open so that it matches  the images.    
+  
+		HIHVgsvdhhjfhdbchghj
 
-	JavascriptExecutor js = (JavascriptExecutor) wd;
 
 
 *		Check Element Present or not   
