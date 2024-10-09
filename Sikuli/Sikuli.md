@@ -34,7 +34,8 @@
 		
 *		SendKeys / Type   
 		 sc.click("imgpath");  
-		 sc.type("tshirt");    
+		 sc.type("tshirt");   
+		 sc.type("tshirt",1);   // The second parameter indicates pressing the Shift key. There are many options available like 100 for window+alt
 		 We can't directly send the values, so we must first click, then use sendKeys.
 
 
