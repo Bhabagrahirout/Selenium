@@ -36,6 +36,9 @@
 		 status.rightClick();		
 		
 		
+*		MoveToElement
+		status.mouseMove();		
+		
 *		SendKeys / Type   
 		 sc.click("imgpath");  
 		 sc.type("tshirt");   
@@ -75,7 +78,15 @@
 		b)Region   
 			Region elementRegion = new Region(x,y,w,h);   
 			elementRegion.above(100).click();
-		 	From imgpath element to upper 100px click     
+		 	From imgpath element to upper 100px click   
+		 	
+		 	
+*		Scroll   (not working)   
+		 	sc.wheel(-4, 10);   
+		 The first parameter is the amount of mouse scrolling (negative values scroll down, positive values scroll up).  
+		 The second parameter indicates how many times to perform the scrolling action.
+
+		 			 	  
 			
 		 
 	
