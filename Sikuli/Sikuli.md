@@ -6,6 +6,11 @@
 	Screen sc= new Screen();  
 	String imgpath="img1.png";
 
+*	sc.wait("imgpath",10);
+
+
+
+
 *	Check Element Present or not     
 	sc.wait("imgpath",10);  // it throws Exceptions     
 		OR   
