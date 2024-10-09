@@ -9,17 +9,18 @@
 *		Check Element Present or not   
 		 sc.wait("imgpath",10);  // it throws Exceptions   
 					OR   
-		  Match status=sc.exists("imgpath",10);   
+		 Match status=sc.exists("imgpath",10);  
+		 if(status!=null)  
+			System.out.println("element Found");   
+		 else   
+			System.out.println("element  Not Found");
 
 
 
 
 *	Check Element Present or not     
 	
-	if(status!=null)  
-		System.out.println("element Found");   
-	else   
-		System.out.println("element  Not Found");
+	
 				
 			
 	
