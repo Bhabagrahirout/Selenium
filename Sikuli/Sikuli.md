@@ -6,15 +6,16 @@
 		Screen sc= new Screen();  
 		String imgpath="img1.png";
 
-*		sc.wait("imgpath",10);
+*		Check Element Present or not   
+		 sc.wait("imgpath",10);  // it throws Exceptions   
+					OR   
+		  Match status=sc.exists("imgpath",10);   
 
 
 
 
 *	Check Element Present or not     
-	sc.wait("imgpath",10);  // it throws Exceptions     
-		OR   
-	Match status=sc.exists("imgpath",10);
+	
 	if(status!=null)  
 		System.out.println("element Found");   
 	else   
