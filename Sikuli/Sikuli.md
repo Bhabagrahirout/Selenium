@@ -10,7 +10,7 @@
 		 String imgpath="img1.png";
 
 
-*	__ 	Check Element Present or not   
+*		__ Check Element Present or not __   
 		 sc.wait("imgpath",10);  // it throws Exceptions   
 				OR   
 		 Match status=sc.exists("imgpath",10);  
