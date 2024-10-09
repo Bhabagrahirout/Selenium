@@ -85,7 +85,7 @@
 		 	sc.wheel(5, 10);   
 		 The first parameter is the amount of mouse scrolling (negative values scroll down, positive values scroll up).  
 		 The second parameter indicates how many times to perform the scrolling action.   
-	###### Wheel will work when the cursor is within the page, i.e., within the scrollable area. So, we click arbitrarily on the page.
+	###### Wheel will work when the cursor is within the page, i.e within the scrollable area. So, we click arbitrarily on the page.
 
 	
 
