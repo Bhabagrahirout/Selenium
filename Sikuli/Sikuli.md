@@ -3,7 +3,7 @@
 
 ### The screen Should be open so that it matches  the images.
 
-
+		Screen sc=new Screen();
 
 
 *		Check Element Present or not   
