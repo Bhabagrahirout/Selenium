@@ -23,7 +23,7 @@
 
 *		Click   
 		 sc.click("imgpath");    
-		 OR
+		   OR
 		 status.click();  
 		 If you don't provide any arguments, it will click in the middle of the screen. 
 		 
