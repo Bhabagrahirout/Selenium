@@ -6,7 +6,7 @@
 		Screen sc= new Screen();  
 		String imgpath="img1.png";
 
-*	sc.wait("imgpath",10);
+*		sc.wait("imgpath",10);
 
 
 
