@@ -22,7 +22,8 @@
 		
 *		SendKeys / Type   
 		 sc.click("imgpath");  
-		 sc.type("tshirt");
+		 sc.type("tshirt");    
+		 We can't directly send the values, so we must first click, then use sendKeys.
 		
 			
 	
