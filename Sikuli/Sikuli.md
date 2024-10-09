@@ -3,8 +3,7 @@
 
 ### The screen Should be open so that it matches  the images.    
   
-		HIHVgsvdhhjfhdbchghj
-
+  bhasbhasdasghs
 
 
 *		Check Element Present or not   
