@@ -9,7 +9,7 @@
 
 *		Check Element Present or not   
 		 sc.wait("imgpath",10);  // it throws Exceptions   
-					OR   
+				OR   
 		 Match status=sc.exists("imgpath",10);  
 		 if(status!=null)  
 			System.out.println("element Found");   
@@ -17,11 +17,13 @@
 			System.out.println("element  Not Found");
 
 
-
-		String imgpath="img1.png";
-			Screen sc= new Screen();  
-	
-				
+*		Click   
+		sc.click("imgpath"); 
+		
+*		SendKeys / Type   
+		sc.click("imgpath");  
+		sc.type("tshirt");
+		
 			
 	
 	
