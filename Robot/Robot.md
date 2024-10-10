@@ -38,7 +38,7 @@
 *		Delay   
 		 rb.setAutoDelay(1000);	    
 		 Set a delay to allow time for performing actions. It completes its tasks as usual but keeps   
- the processor occupied for this duration.(time taken to perform an Action)
+ 		 the processor occupied for this duration.(time taken to perform an Action)
 		    
 	     
 	     
