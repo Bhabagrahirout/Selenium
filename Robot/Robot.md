@@ -8,12 +8,17 @@
 		 rb.keyPress(KeyEvent.VK_TAB);
 		 rb.keyRelease(KeyEvent.VK_TAB);  
 			OR
-		 int keyCod=KeyEvent.VK_A; // for all key
-		 int keyCode = KeyEvent.getExtendedKeyCodeForChar('a'); // only for AlphaNumeric
+		 int keyCod=KeyEvent.VK_A; 
+		 int keyCode = KeyEvent.getExtendedKeyCodeForChar('a'); // it take only char
 		 rb.keyPress(keyCod);
 		 rb.keyRelease(keyCod);			
-		 Every key has a keyCode ,we can direcctly pass it 
-		
+		 Every key has a keyCode ,we can direcctly pass it (For symbol and other things you manage accordingly)  
+		 if (!char.isLetterOrDigit(c)) {
+		    robot.keyPress(KeyEvent.VK_SHIFT);
+		    robot.keyPress(keyCode);
+			robot.keyRelease(keyCode);
+			robot.keyRelease(KeyEvent.VK_SHIFT); }
+		            
 		
 *		Move to element	  
 		 rb.mouseMove(500, 500);			
