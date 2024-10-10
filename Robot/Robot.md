@@ -16,8 +16,8 @@
 		 if (!char.isLetterOrDigit(c)) {
 		    robot.keyPress(KeyEvent.VK_SHIFT);
 		    robot.keyPress(keyCode);
-		robot.keyRelease(keyCode);
-		robot.keyRelease(KeyEvent.VK_SHIFT); }
+		    robot.keyRelease(keyCode);
+		    robot.keyRelease(KeyEvent.VK_SHIFT); }
 		            
 		
 *		Move to element	  
