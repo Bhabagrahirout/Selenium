@@ -54,7 +54,21 @@
 		 According to the RGB values, we can validate the element before and after submission
 	     
 	     
+*		ScreenShot   
+		 Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+		 BufferedImage img=rb.createScreenCapture(screenRect);
+		 ImageIO.write(img, "png", new File("screencapture.png"));
 	     
 	     
+*		Multi-resolution screenshot   
+		 Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+		 MultiResolutionImage multiResImage = rb.createMultiResolutionScreenCapture(screenRect);
+		 List<Image> resolutionVariants = multiResImage.getResolutionVariants();  
+		 It takes screenshots from low to high DPI; according to your choice, you can save.  
+		 Save the high-resolution image.  
+		 Image bestImage = resolutionVariants.get(resolutionVariants.size() - 1);
+		 BufferedImage bufferedBestImage = (BufferedImage) bestImage;
+		 ImageIO.write(bufferedBestImage, "png", new File("best_screencapture.png"));  
+		 For different resolution screenshots, your system should support it; i.e it requires a good resolution display.
             
              
