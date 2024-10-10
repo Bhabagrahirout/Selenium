@@ -44,7 +44,14 @@
 		 rb.setAutoDelay(1000);	    
 		 Set a delay to allow time for performing actions. It completes its tasks as usual but keeps   
  		 the processor occupied for this duration.(time taken to perform an Action)
-		    
+		 
+		 
+*		Color of element 
+		 Color pixelColor = rb.getPixelColor(200,200);
+		 int red=pixelColor.getRed();
+		 int green=pixelColor.getGreen();
+		 int blue=pixelColor.getBlue();  
+		 According to the RGB values, we can validate the element before and after submission
 	     
 	     
 	     
