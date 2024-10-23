@@ -23,15 +23,15 @@
 *		KeyBoard   
   
 		 1)sendkeys     
-			a)first click an input, then do   
+			a)first click an input, then pass  
 				action.keyDown(Keys.SHIFT).perform();
 				action.keyDown("a").perform();
 				Keys keycode=Keys.getKeyFromUnicode('a');//it is use for  special characters or symbols that have associated key codes , not work for char
 				action.keyUp(Keys.SHIFT).perform();
 				// for character kayUp() maynot needed but for Shift,ctrl,Alt etc require
+			b)without click
+				action.keyDown(ele, "a").perform(); // we can press only one char at a time
 		
-			
-
 		 
 *		Drag and Drop	  
   
