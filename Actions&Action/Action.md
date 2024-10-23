@@ -4,12 +4,10 @@
 	
 
 ##### Official Link
-		[https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html#dragAndDropBy(org.openqa.selenium.WebElement,int,int)](url) 
+		[https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html#dragAndDropBy(org.openqa.selenium.WebElement,int,int)]   
+  
+
 		
-
-
-
-
 
 		Actions action=new Actions(driver);
 		
