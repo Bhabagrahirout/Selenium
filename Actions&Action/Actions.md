@@ -31,7 +31,8 @@
 				// for character kayUp() maynot needed but for Shift,ctrl,Alt etc require
 			b)without click
 				action.keyDown(ele, "a").perform(); // we can press only one char at a time
-		
+		 2)actions   
+			 		
 		 
 *		Drag and Drop	  
   
