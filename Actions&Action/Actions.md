@@ -29,7 +29,7 @@
 		 action.moveToElement(element).click().perform();
 		 
 *		Double Click		 
-		 action.doubleClick(element).perform();
+		action.doubleClick(element).perform();
 
 *		RightClick
 		action.contextClick(ele).perform();
@@ -38,7 +38,7 @@
 		action.clickAndHold(ele).perform();		
 		 
 *		Sendkeys   
-		 action.sendKeys(element, "Bhaba").perform();	
+		action.sendKeys(element, "Bhaba").perform();	
 		 
 *		Sendkeys
 			a)direct
