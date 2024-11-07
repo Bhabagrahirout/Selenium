@@ -1,38 +1,77 @@
 # Actions  
 
 
-	
+
 
 
 *	Official Link:[https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html#dragAndDropBy(org.openqa.selenium.WebElement,int,int)]   
   	
 
 		Actions action=new Actions(driver);
+		WebElement ele=wd.findElement(By.id("male"));
+
+*		Wait
+		 action.pause(Duration.ofSeconds(10)).perform();		
 		
+*		Scroll
+		 action.moveToElement(ele).perform();  // the crusor move to the element
+		 action.scrollToElement(ele).perform();   
+		 action.scrollFromOrigin(WheelInput.ScrollOrigin.fromViewport(0, 0), 0, 600).perform();// from(x,y) to x,y
+
+*		Move crusor pointer
+		 action.moveByOffset(200, 50).doubleClick().perform(); 
+		 action.moveToLocation(200,50).doubleClick().perform();			
+		 //it does't show in UI  but goes
 		
 *		Click
-		 WebElement element=wd.findElement(By.xpath("//button[@name=\"start\"]"));
-		 action.click(element).perform();		
+		 action.click(element).perform();
+		 or
+		 action.moveToElement(element).click().perform();
 		 
 *		Double Click		 
 		 action.doubleClick(element).perform();
+
+*		RightClick
+		action.contextClick(ele).perform();
+
+*		clickAndHold()  
+		action.clickAndHold(ele).perform();		
 		 
 *		Sendkeys   
-		 action.sendKeys(element, "Bhaba").perform();		
+		 action.sendKeys(element, "Bhaba").perform();	
 		 
-*		KeyBoard   
-  
-		 1)sendkeys     
-			a)first click an input, then pass  
-				action.keyDown(Keys.SHIFT).perform();
-				action.keyDown("a").perform();
-				Keys keycode=Keys.getKeyFromUnicode('a');//it is not work 
-				action.keyUp(Keys.SHIFT).perform();
-				// for character kayUp() maynot needed but for Shift,ctrl,Alt etc require
-			b)without click
-				action.keyDown(ele, "a").perform(); // we can press only one char at a time
-		 2)actions   
-			 		
+*		Sendkeys
+			a)direct
+			ele=wd.findElement(By.id("name"));
+			action.sendKeys(ele, "Bhaba:").perform();   
+
+			b)Through Keyboard
+			action.keyDown(ele, "B").perform(); // we can press only one char at a time and caseSensitive
+			action.keyDown("h").perform();	
+			action.keyDown(Keys.SHIFT).perform();
+			action.keyDown(Keys.SEMICOLON).perform();
+			action.keyUp(Keys.SHIFT).perform();
+			// for character kayUp() maynot needed but for Shift,ctrl,Alt etc require
+			Keys keycode=Keys.getKeyFromUnicode('a');//it is use for  special characters or symbols that have associated key codes , not work for char
+			action.keyUp(keycode).perform();	
+			
+*		Enter 
+			ele=wd.findElement(By.id("Wikipedia1_wikipedia-search-input"));
+			action.sendKeys(ele, Keys.ENTER).perform();
+		    	//OR direct through element
+			ele.sendKeys(Keys.ENTER);	
+			
+*		Page up,Down
+			a)For a element
+				ele=wd.findElement(By.id("male"));
+				ele.click();
+				ele.sendKeys(Keys.ARROW_UP);
+				//we can press more like pagedown,pageup,Tab etc   
+
+			b)for entire page
+			action.keyDown(Keys.PAGE_DOWN).perform(); 
+			action.keyUp(Keys.PAGE_DOWN).perform(); 
+			//scroll one page						 	
 		 
 *		Drag and Drop	  
   
@@ -49,9 +88,7 @@
 			WebElement resize=wd.findElement(By.xpath("//*[@id='resizable']/div[3]"));
 			action.dragAndDropBy(resize,300,0).perform(); // x, y start from the element   
 
-*		Wait   
-			action.pause(Duration.ofSeconds(10)).perform();
 			
-*					
+				
 		
  
