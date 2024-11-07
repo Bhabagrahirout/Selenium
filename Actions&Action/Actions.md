@@ -61,17 +61,18 @@
 		 //OR direct through element
 		 ele.sendKeys(Keys.ENTER);	
 			
-*		Page up,Down
-			a)For a element
-				ele=wd.findElement(By.id("male"));
-				ele.click();
-				ele.sendKeys(Keys.ARROW_UP);
-				//we can press more like pagedown,pageup,Tab etc   
+*		Page up,Down   
+  
+		 a)For a element           
+		    ele=wd.findElement(By.id("male"));
+		    ele.click();
+		    ele.sendKeys(Keys.ARROW_UP);
+		    //we can press more like pagedown,pageup,Tab etc   
 
-			b)for entire page
-			action.keyDown(Keys.PAGE_DOWN).perform(); 
-			action.keyUp(Keys.PAGE_DOWN).perform(); 
-			//scroll one page						 	
+		 b)For entire page
+		    action.keyDown(Keys.PAGE_DOWN).perform(); 
+		    action.keyUp(Keys.PAGE_DOWN).perform(); 
+		    //scroll one page						 	
 		 
 *		Drag and Drop	  
   
