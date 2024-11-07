@@ -11,7 +11,7 @@
 		WebElement ele=wd.findElement(By.id("male"));
 
 *		Wait
-		 action.pause(Duration.ofSeconds(10)).perform();		
+		action.pause(Duration.ofSeconds(10)).perform();		
 		
 *		Scroll
 		 action.moveToElement(ele).perform();  // the crusor move to the element
