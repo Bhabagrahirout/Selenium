@@ -56,10 +56,10 @@
 				action.keyUp(keycode).perform();	
 			
 *		Enter 
-			ele=wd.findElement(By.id("Wikipedia1_wikipedia-search-input"));
-			action.sendKeys(ele, Keys.ENTER).perform();
-		    	//OR direct through element
-			ele.sendKeys(Keys.ENTER);	
+		 ele=wd.findElement(By.id("Wikipedia1_wikipedia-search-input"));
+		 action.sendKeys(ele, Keys.ENTER).perform();
+		 //OR direct through element
+		 ele.sendKeys(Keys.ENTER);	
 			
 *		Page up,Down
 			a)For a element
