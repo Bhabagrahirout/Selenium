@@ -42,18 +42,18 @@
 		 
 *		Sendkeys
 			a)direct
-			ele=wd.findElement(By.id("name"));
-			action.sendKeys(ele, "Bhaba:").perform();   
+				ele=wd.findElement(By.id("name"));
+				action.sendKeys(ele, "Bhaba:").perform();   
 
 			b)Through Keyboard
-			action.keyDown(ele, "B").perform(); // we can press only one char at a time and caseSensitive
-			action.keyDown("h").perform();	
-			action.keyDown(Keys.SHIFT).perform();
-			action.keyDown(Keys.SEMICOLON).perform();
-			action.keyUp(Keys.SHIFT).perform();
-			// for character kayUp() maynot needed but for Shift,ctrl,Alt etc require
-			Keys keycode=Keys.getKeyFromUnicode('a');//it is use for  special characters or symbols that have associated key codes , not work for char
-			action.keyUp(keycode).perform();	
+				action.keyDown(ele, "B").perform(); // we can press only one char at a time and caseSensitive
+				action.keyDown("h").perform();	
+				action.keyDown(Keys.SHIFT).perform();
+				action.keyDown(Keys.SEMICOLON).perform();
+				action.keyUp(Keys.SHIFT).perform();
+				// for character kayUp() maynot needed but for Shift,ctrl,Alt etc require
+				Keys keycode=Keys.getKeyFromUnicode('a');//it is use for  special characters or symbols that have associated key codes , not work for char
+				action.keyUp(keycode).perform();	
 			
 *		Enter 
 			ele=wd.findElement(By.id("Wikipedia1_wikipedia-search-input"));
