@@ -67,10 +67,12 @@
 				js.executeScript("arguments[0].scrollLeft=1000;", element1);
 				we can scroll right ,top,button etc
 
-			
+*		 Accept Alert	
+			js.executeScript("window.alert=function();");
+			//if it show error then use try catch block	
 			
 
-*		 create alert
+*		 Create alert
 		try {
 			js.executeScript("alert('hii')");
 			Thread.sleep(1000);
