@@ -92,6 +92,11 @@
 		 first index value for 1st arguments
 
 
+*		Mandatory Field(Pseudo element)
+		 String query="return window.getComputedStyle(arguments[0],'::Before').getPropertyValue('content');";   
+		 String text=(String) js.executeScript(query,ele);  // print *  
+		 // more Psuedo element ::after,::has,::first-line,::selection 
+
 		 
 *		Console   
   
